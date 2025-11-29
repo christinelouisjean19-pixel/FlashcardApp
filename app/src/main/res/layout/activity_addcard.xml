@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Entrer la question"
+        android:textSize="18sp"
+        android:importantForAutofill="yes"/>
+
+    <EditText
+        android:id="@+id/edit_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@id/edit_question"
+        android:layout_marginTop="12dp"
+        android:hint="Entrer la réponse"
+        android:textSize="18sp"
+        android:importantForAutofill="yes"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_answer"
+        android:layout_marginTop="530dp"
+        android:minHeight="48dp"
+        android:layout_alignParentEnd="false"
+        android:text="Sauvegarder" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-56dp"
+        android:layout_marginEnd="18dp"
+        android:minHeight="48dp"
+        android:text="Retour" />
+
+
+</RelativeLayout>

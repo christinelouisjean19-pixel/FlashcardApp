@@ -12,21 +12,28 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="center"
-        android:text="/pourquoi est il important de continuer apprendre de nouvelle choses"
-        android:texteSize="40sp"
-        app:layout_constraintStart_toSarTop="parent"
-        app:layout_constraintTop="parent"
-        tools:ignore="TextSizecheck"/>
+        android:text="Qui est le plus grand roi de tout l'univers"
+        android:textSize="40sp"
+        tools:ignore="TextSizeCheck" />
 
+    <TextView
+        android:id="@+id/flashcard_answer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="L'Eternel des armées"
+        android:textSize="40sp"
+        android:layout_below="@id/flashcard_question"
+        android:visibility="gone"
+        tools:ignore="TextSizeCheck" />
 
-<TextView
-    android:id="@+id/textView2"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:gravity="center"
-    android:text="/continuer apprendre permet de developper son esprit"
-    android:textSize="40sp"
-    android:layout_below="@id/flashcard_question"
-    tools:ignore="textSizeCheck"/>
-
+    <ImageButton
+        android:id="@+id/button_add"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Ajouter une carte"
+        android:src="@drawable/ic_add" />
 </RelativeLayout>
